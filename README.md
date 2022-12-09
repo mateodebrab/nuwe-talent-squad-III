@@ -12,10 +12,12 @@ associate's degree: 3,
 bachelor's degree: 4,  
 master's degree: 5  
 Es un problema de clasificación multiclase. Ordenando las etiquetas del nivel educativo de menos a mayor (some high school: 0, high school:1, el resto igual), merece la pena probar con una regresión.  
+Si el modelo consigue preveer el nivel de educación parental en función de las notas del niño podremos decir que hay una influencia.  
 El notebook de la solución propuesta esta disponible en el link: [app.py](/app.py) 
 ***
 ## analysis
-We have 8 features, all numerical, corresponding to the parameters measured by the different sensors. The training dataset has 2100 records and the test dataset 900. The distribution between the 3 labels is balanced: 33% of the records for each label. The features are standardized. We normalize them too to put them all on the same scale from -1 to 1. 3 features have almost no correlation with the target: feature7, feature8, feature4. The feature importance graph shows us the same thing. The decision is made not to remove them because 2 percentage points of f1_score are lost by removing them. 
+Tenemos 6 variables para intentar predecir el nivel de educación parental: las notas de matemáticas, lectura y escritura, el genero del niño, si tiene becas y si asiste a la academia. El analisis de las correlaciones indica que solo las notas tienen relación con el nivel educacional parental, una relación positiva (más nivel, mejor nota), pero muy pequeña. Ver gráfico [app.py](/app.py)  
+Si miramos el gráfico de la distribución del nivel parental según la nota de escritura, dispersando un poco lo elementos alrededor del nivel según una distribución normal para verlo mejor, no se puede apreciar un patrón claro. Lo mismo pasa con las otras variables. Ver gráfico [app.py](/app.py)
 ***
 ## solution
 I have trained a ramdom forest model. To do so, I have reserved 30% of the train dataset to measure the model performance.  
