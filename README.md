@@ -45,6 +45,5 @@ Para resolver el problema utilice el siguiente paquete:
 Espero disfrutes de mi codigo tanto como yo resolviendo este ejercicio.    
 Muchas gracias   
 Mathieu Debrabander  
-mathieudebrabander@hotmail.com  
 https://www.linkedin.com/in/mathieu-debrabander-9b780528/
 ***
