@@ -22,8 +22,8 @@ Si miramos el gráfico de la distribución del nivel parental según la nota de 
 ![Alt text](/relación_nivel_de_educacion_parental_VS_nota_de_escritura_del_niño.png)  
 ***
 ## solution
-Entrene varios modelos de clasificación multiclase además de un modelo de redes neuronales. El mejor modelo, por poco delante de las redes neuronales, es el GradientBoostingClassifier con un F1_score de 0.2460 una vez hiperparametrizado.  
-Entrene también unos modelos de regresión, después de ordenar las etiquetas de nivel de educación parental. Después de redondear las predicciones, el mejor modelo de regresión es la regresión linear, muy poco por encima de la linea de una predicción aleatoria, con un F1_score de 0.1770.  
+Entrené varios modelos de clasificación multiclase además de un modelo de redes neuronales. El mejor modelo, por poco delante de las redes neuronales, es el GradientBoostingClassifier con un F1_score de 0.2460 una vez hiperparametrizado.  
+Entrené también unos modelos de regresión, después de ordenar las etiquetas de nivel de educación parental. Después de redondear las predicciones, el mejor modelo de regresión es la regresión linear, muy poco por encima de la linea de una predicción aleatoria, con un F1_score de 0.1770.  
 ***
 ## results
 El resultado es que el mejor modelo GradientBoostingClassifier con un F1_score de 0.2460 no es un buen modelo. Un predicción hecha al hazar del nivel de educación parental daría un F1_score de 0.1666. Es decir que al hazar se acertaría el nivel de educación parental una vez sobre 6, al tener 6 etiquetas.  
