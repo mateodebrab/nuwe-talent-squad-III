@@ -28,7 +28,7 @@ Entrené también unos modelos de regresión, después de ordenar las etiquetas 
 ## results
 El resultado es que el mejor modelo GradientBoostingClassifier con un F1_score de 0.2460 no es un buen modelo. Un predicción hecha al hazar del nivel de educación parental daría un F1_score de 0.1666. Es decir que al hazar se acertaría el nivel de educación parental una vez sobre 6, al tener 6 etiquetas.  
 El mejor modelo acierta una vez sobre 4. Es mejor que el hazar, pero no llegamos ni a acercarnos a acertar la mitad de las veces.  
-Mi conclusión es que no podemos decir que el nivel de educación parental influye sobre las notas del niño.  
+Mi conclusión es que no podemos decir que el nivel de educación parental influye de forma significativa sobre las notas del niño.  
 El modelo mejora un poco reduciendo el número de etiquetas a 3 (sin estudios, high school, universitario), pero tampoco mucho.  
 En el archivo csv [predictions.csv](/predictions.csv) encontrarás las predicciones en csv y en el archivo [predictions.json](/predictions.json) las predicciones en json.  
 ***
