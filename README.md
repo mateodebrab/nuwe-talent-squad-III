@@ -16,9 +16,10 @@ Si el modelo consigue preveer el nivel de educación parental en función de las
 El notebook de la solución propuesta esta disponible en el link: [app.py](/app.py) 
 ***
 ## analysis
-Tenemos 6 variables para intentar predecir el nivel de educación parental: las notas de matemáticas, lectura y escritura, el genero del niño, si tiene becas y si asiste a la academia. El analisis de las correlaciones indica que solo las notas tienen relación con el nivel educacional parental, una relación positiva (más nivel, mejor nota), pero muy pequeña. Ver gráfico [app.py](/app.py)  
+Tenemos 6 variables para intentar predecir el nivel de educación parental: las notas de matemáticas, lectura y escritura, el genero del niño, si tiene becas y si asiste a la academia. El analisis de las correlaciones indica que solo las notas tienen relación con el nivel educacional parental, una relación positiva (más nivel, mejor nota), pero muy pequeña.  
+![Alt text](/correlaciones.png)  
 Si miramos el gráfico de la distribución del nivel parental según la nota de escritura, dispersando un poco lo elementos alrededor del nivel según una distribución normal para verlo mejor, no se puede apreciar un patrón claro. Lo mismo pasa con las otras variables.  
-![Alt text](/relación nivel de educación parental VS nota de escritura del niño.png)
+![Alt text](/relación nivel de educación parental VS nota de escritura del niño.png)  
 ***
 ## solution
 I have trained a ramdom forest model. To do so, I have reserved 30% of the train dataset to measure the model performance.  
