@@ -22,24 +22,28 @@ Si miramos el gráfico de la distribución del nivel parental según la nota de 
 ![Alt text](/relación_nivel_de_educacion_parental_VS_nota_de_escritura_del_niño.png)  
 ***
 ## solution
-I have trained a ramdom forest model. To do so, I have reserved 30% of the train dataset to measure the model performance.  
-I have compiled a gridsearch to optimize the model with the best parameters, with a gain of 0.3% for the f1_score.
+Entrene varios modelos de clasificación multiclase además de un modelo de redes neuronales. El mejor modelo, por poco delante de las redes neuronales, es el GradientBoostingClassifier con un F1_score de 0.2460 una vez hiperparametrizado.  
+Entrene también unos modelos de regresión, después de ordenar las etiquetas de nivel de educación parental. Después de redondear las predicciones, el mejor modelo de regresión es la regresión linear, muy poco por encima de la linea de una predicción aleatoria, con un F1_score de 0.1770.  
 ***
 ## results
-The result for the final f1_score for the ramdom forest model is 91.54%.  
-The model is used to predict the label for the test dataset. The result is in the csv-file [predictions.csv](/predictions.csv) and the json-file [predictions.json](/predictions.json)
+El resultado es que el mejor modelo GradientBoostingClassifier con un F1_score de 0.2460 no es un buen modelo. Un predicción hecha al hazar del nivel de educación parental daría un F1_score de 0.1666. Es decir que al hazar se acertaría el nivel de educación parental una vez sobre 6, al tener 6 etiquetas.  
+El mejor modelo acierta una vez sobre 4. Es mejor que el hazar, pero no llegamos ni a acercarnos a acertar la mitad de las veces.  
+Mi conclusión es que no podemos decir que el nivel de educación parental influye sobre las notas del niño.  
+El modelo mejora un poco reduciendo el número de etiquetas a 3 (sin estudios, high school, universitario), pero tampoco mucho.  
+En el archivo csv [predictions.csv](/predictions.csv) encontrarás las predicciones en csv y en el archivo [predictions.json](/predictions.json) las predicciones en json.  
 ***
 ## license
-To resolve the problem, i used the technical package:
-> - pycharm
-> - python
-> - pandas
-> - scikit-learn
-> - matplotlib
-> - seaborn  
+Para resolver el problema utilice el siguiente paquete:
+> - python~=3.10
+> - numpy~=1.23.5
+> - tensorflow~=2.11.0
+> - pandas~=1.5.2
+> - scikit-learn~=1.2.0
+> - matplotlib~=3.6.2
+> - seaborn~=0.12.1  
 
-I hope you enjoy it as much as I enjoyed solving it.  
-Thank you  
+Espero disfrutes de mi codigo tanto como yo resolviendo este ejercicio.    
+Muchas gracias   
 Mathieu Debrabander  
 mathieudebrabander@hotmail.com  
 https://www.linkedin.com/in/mathieu-debrabander-9b780528/
