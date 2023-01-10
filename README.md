@@ -20,7 +20,6 @@ Tenemos 6 variables para intentar predecir el nivel de educación parental: las 
 ![Alt text](/correlaciones.png)  
 Si miramos el gráfico de la distribución del nivel parental según la nota de escritura, dispersando un poco lo elementos alrededor del nivel según una distribución normal para verlo mejor, no se puede apreciar un patrón claro. Lo mismo pasa con las otras variables.  
 ![Alt text](/relación_nivel_de_educacion_parental_VS_nota_de_escritura_del_niño.png)  
-![Imagen de biblioteca de pocimas de druida](https://image.freepik.com/foto-gratis/libreria-antigua-magia-hechiceros-libros-misteriosos-encantamientos_154868-242.jpg)
 ***
 ## solution
 Entrené varios modelos de clasificación multiclase además de un modelo de redes neuronales. El mejor modelo, por poco delante de las redes neuronales, es el GradientBoostingClassifier con un F1_score de 0.2460 una vez hiperparametrizado.  
